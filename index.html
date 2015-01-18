@@ -1,47 +1,49 @@
 <html ng-app="shuffleahotel">
-
     <head>
-
+        <title>SHUFFLE A HOTEL</title>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/ripples.min.css" rel="stylesheet">
         <link href="assets/css/material-wfont.min.css" rel="stylesheet">
-
+        <link rel="stylesheet" type="text/css" href="assets/css/cartas.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+        <script type="text/javascript" src="assets/js/modernizr.custom.79639.js"></script>
     </head>
 
-    <body>
+    <body class="backImg">
 
         <!-- Your site -->
-
-        <h1>You can add your site here.</h1>
-
-        <h2>To ensure that material-design theme is working, check out the buttons below.</h2>
-
-        <h3 class="text-muted">If you can see the ripple effect on clicking them, then you are good to go!</h3>
-
-        <p class="bs-component">
-            <a href="javascript:void(0)" class="btn btn-default">Default</a>
-            <a href="javascript:void(0)" class="btn btn-primary">Primary</a>
-            <a href="javascript:void(0)" class="btn btn-success">Success</a>
-            <a href="javascript:void(0)" class="btn btn-info">Info</a>
-            <a href="javascript:void(0)" class="btn btn-warning">Warning</a>
-            <a href="javascript:void(0)" class="btn btn-danger">Danger</a>
-            <a href="javascript:void(0)" class="btn btn-link">Link</a>
-        </p>
-
+        <div class="wrapper">
+            <div id="beginDiv">
+                <span id="beginTitle"><h1>Shuffle a hotel!</h1></span>
+                <a href="javascript:void(0)" id="beginButton" class="btn btn-success btn-raised"><i class="glyphicon glyphicon-search"></i>  Buscar hoteles</a>
+            </div>
+            <div id="actions">
+                <span id="nav-prev">&lt;</span>
+                <span id="nav-next">&gt;</span>
+            </div>
+            <hotels></hotels>
+        </div>
         <!-- Your site ends -->
 
+        <!-- external libraries scripts -->
         <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="assets/js/angular.min.js"></script>
         <script src="assets/js/ripples.min.js"></script>
         <script src="assets/js/material.min.js"></script>
-        <script type="text/javascript" src="assets/js/app.js"></script>
         <script>
             $(document).ready(function() {
                 $.material.init();
             });
         </script>
+        <script type="text/javascript" src="assets/js/angular.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.baraja.js"></script>
 
+        <!-- Angular.JS scripts -->
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        <script type="text/javascript" src="directives/hotelsdirective.js"></script>
+        <script type="text/javascript" src="controllers/hotelscontroller.js"></script>
+
+        <!-- custom functions scripts -->
+        <script type="text/javascript" src="assets/js/main.js"></script>
     </body>
-
 </html>

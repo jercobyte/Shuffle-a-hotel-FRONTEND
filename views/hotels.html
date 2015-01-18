@@ -1,0 +1,11 @@
+<div id="baraja1" class="barajabox">
+	<ul id="baraja-el" class="baraja-container">
+		<li ng-repeat="hotel in hotelCtrl.hotels">
+	        <img ng-src="{{hotel.path}}" alt="image1"/>
+	        <h4>{{hotel.name}}</h4>
+	        <p>{{hotel.price}}</p>
+	        <p>{{hotel.stars}} estrellas</p>
+	        <a href="http://{{hotel.web}}">{{hotel.web}}</a>
+	    </li>
+	</ul>
+</div>
