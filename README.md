@@ -1,4 +1,4 @@
-# Suffle-a-hotel-FRONTEND
+# Shuffle-a-hotel-FRONTEND
 
 Front-end de la aplicación "Shuffle-a-hotel" a integrar en la aplicación Sails en https://github.com/adriannieto/shuffle-a-hotel
 
