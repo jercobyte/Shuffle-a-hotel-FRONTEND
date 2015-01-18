@@ -1,6 +1,5 @@
 .barajabox {
-	width: 200px;
-	margin: 30px auto;
+	padding: 30px;
 	color: #aaa;
 	display: none;
 }
